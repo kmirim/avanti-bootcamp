@@ -99,6 +99,7 @@ sudo ./aws/install
 ```powershell
 msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi /quiet
 ```
+> **Nota**: Esse comando é usado para instalar silenciosamente a AWS CLI no Windows sem intervenção do usuário.
 
 ## 🔑 3. Autenticação AWS
 
