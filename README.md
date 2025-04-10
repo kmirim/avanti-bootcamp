@@ -114,6 +114,23 @@ aws configure
 - Default region: us-east-1
 - Default output: json
 
+2.1. Verificar quais as chaves existentes:
+``` 
+aws ec2 describe-key-pairs --region us-east-1
+
+# Saida esperada:
+{
+    "KeyPairs": [
+        {
+            "KeyPairId": "key-1234567890abcdef0",
+            "KeyName": "kmirim-avanti",
+            "KeyType": "rsa",
+            "Tags": []
+        }
+    ]
+}
+```
+
 3. Teste o acesso:
 ```bash
 # Listar buckets S3
