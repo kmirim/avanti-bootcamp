@@ -1,4 +1,4 @@
-# Caso Real: O Desastre da Atualização Não Testada no Time de Backend
+# Caso Real: O desastre da atualização não testada no time de Backend
 
 ## Personagens:
 - **Carlos** (Tech Lead do Backend): Queria atualizar o servidor de pagamentos para Node.js 18.
