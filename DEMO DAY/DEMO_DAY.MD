@@ -3,7 +3,7 @@
 ## Personagens:
 - **Carlos** (Tech Lead do Backend): Queria atualizar o servidor de pagamentos para Node.js 18.
 - **Ana** (Dev Backend Jr): Fez a atualização direto no servidor de produção sem avisar.
-- **Time de Infra** (Lucas e equipe): Descobriu o problema só quando o app quebrou.
+- **Time de Infra** (Kalu e equipe): Descobriu o problema só quando o app quebrou.
 
 ## O Que Aconteceu?
 Ana acessou o servidor de produção via SSH e rodou:
@@ -45,15 +45,15 @@ sudo apt-get install -y nodejs
 
 ### 3. Ana Quer Atualizar? Agora É Seguro!
 - Ela edita o `setup_node.sh` para Node 18 e abre um Pull Request no GitHub.
-- Carlos e Lucas (Infra) revisam e testam em homologação.
+- Isa e Kalu (Infra) revisam e testam em homologação.
 - Se tudo ok, o merge no main dispara um terraform apply automático.
 
-## Por Que Isso Evita o Caos?
+## Por que isso evita o caos?
 - **Rastreabilidade**: Sabemos quem pediu a mudança (Ana) e quando (histórico do Git).
 - **Testes**: A atualização é testada antes de ir para produção.
 - **Padronização**: Todos os servidores usam a mesma versão do Node.js.
 
-## 🔧 Etapas para Resolver o Config Drift
+## 🔧 Etapas para resolver o config drift
 
 ### 1️⃣ Etapa 1: Identificar o Problema
 **Objetivo**: Entender onde está a inconsistência.
