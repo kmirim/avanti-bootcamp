@@ -43,7 +43,7 @@ curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-### 3. Ana Quer Atualizar? Agora É Seguro!
+### 3. Ana quer atualizar? Agora é seguro!
 - Ela edita o `setup_node.sh` para Node 18 e abre um Pull Request no GitHub.
 - Isa e Kalu (Infra) revisam e testam em homologação.
 - Se tudo ok, o merge no main dispara um terraform apply automático.
@@ -55,7 +55,7 @@ sudo apt-get install -y nodejs
 
 ## 🔧 Etapas para resolver o config drift
 
-### 1️⃣ Etapa 1: Identificar o Problema
+### 1️⃣ Etapa 1: Identificar o problema
 **Objetivo**: Entender onde está a inconsistência.
 
 **Como fazer**:
@@ -72,7 +72,7 @@ sudo cat /etc/nginx/nginx.conf
 **Saída esperada**:
 - Diferenças entre servidores (ex: Python 3.8 vs 3.10).
 
-### 2️⃣ Etapa 2: Definir Infraestrutura como Código (Terraform)
+### 2️⃣ Etapa 2: Definir infraestrutura como código (Terraform)
 **Objetivo**: Criar um template replicável.
 
 **Arquivo**: `servers.tf`
